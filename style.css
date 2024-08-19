@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEE6;
+}
+
+nav {
+    width: 100%;
+    height: 10vw;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1 a {
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.1vw;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    transition: all ease .3s;
+}
+
+#nav-part1 a:hover {
+    margin-left: 20px;
+}
+
+#nav-part1 a:hover {
+    color: #D0021B;
+}
+
+#nav-part2 img {
+    width: 7vw;
+}
+
+#frame {
+    position: relative;
+    width: 40%;
+    height: 95vh;
+    border: 3px solid #D0021B;
+    left: 50%;
+    top: -16%;
+    z-index: 1000;
+    transform: translate(-50%, 0%);
+}
+
+.bar {
+    background-color: #EEEEE6;
+}
+
+.left-bar {
+    position: absolute;
+    left: -6%;
+    top: 14%;
+    width: 12%;
+    height: 22%;
+
+}
+
+.right-bar {
+    position: absolute;
+    right: -6%;
+    top: 14%;
+    width: 12%;
+    height: 22%;
+
+}
+
+#frame h2 {
+    position: absolute;
+    z-index: 11;
+    left: -12%;
+    top: 10%;
+    font-weight: 700;
+    color: #D0021B;
+    text-transform: uppercase;
+    font-size: 10.5vw;
+}
+
+#frame img {
+    width: 700px;
+    left: -18%;
+    position: absolute;
+    filter: drop-shadow(0 0 50px rgba(208, 2, 27, 0.8));
+}
+
+.big-text {
+    /* color: black; */
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: end;
+
+    justify-content: center;
+    position: absolute;
+    bottom: -1.3%;
+}
+
+.big-text h1 {
+    position: relative;
+    font-size: 16.5vw;
+    font-weight: 900;
+    letter-spacing: -1px;
+    transform: scaleY(1.6);
+    background-image: url(https://images.unsplash.com/photo-1517241034903-9a4c3ab12f00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+    opacity: .9;
+    width: 0%;
+}
+
+@media (max-width : 1040px) {
+    #frame {
+        top: -12%;
+    }
+
+    #frame h2 {
+        top: 11%;
+        font-size: 11vw;
+    }
+
+    #frame img {
+        left: -36%;
+    }
+
+    .big-text {
+        bottom: -4.1%;
+    }
+
+    .big-text h1 {
+        transform: scaleY(1.3);
+    }
+}
+
+@media (max-width : 778px) {
+    #frame {
+        top: 10%;
+        width: 60%;
+        display: inline-block;
+        height: 80vh;
+    }
+    #frame h2 {
+        top: 12%;
+        left: -9%;
+        font-size: 15vw;
+    }
+
+    #frame img {
+        left: -22%;
+        width: 650px;
+        top:9%;
+    }
+
+    .left-bar {
+        height: 15%;
+
+    }
+
+    .right-bar {
+        height: 15%;
+
+    }
+}
+
+@media (max-width : 640px) {
+    #nav-part1 a {
+        font-size: 2.1vw;
+    }
+    
+    #nav-part1{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    
+    
+    #nav-part2 img {
+        width: 14vw;
+        margin-top: 40px;
+    }
+    
+    
+    #frame {
+        top: 10%;
+        width: 70%;
+        display: inline-block;
+        height: 80vh;
+    }
+
+    #frame h2 {
+        font-size: 20vw;
+        left: -16%;
+    }
+
+    #frame img {
+        left: -36%;
+        width: 750px;
+        top: 0%;
+    }
+    .big-text h1 {
+        transform: scaleY(4);
+        font-size: 17vw;
+    }
+
+}
+
+@media (max-width : 480px) {
+    #frame{
+        width: 70%;
+    }
+    #frame h2 {
+        top: 19%;
+        left: -20%;
+        font-size: 20.5vw;
+    }
+
+    #frame img {
+        left: -42%;
+        width: 600px;
+        top: 21%;
+    }
+
+    .left-bar {
+        height: 13%;
+        top: 20%;
+
+    }
+
+    .right-bar {
+        height: 13%;
+        top: 20%;
+    }
+    .big-text{
+        bottom: 2%;
+    }
+    .big-text h1 {
+        transform: scaleY(2.5);
+    }
+}
+@media (max-width : 360px) {
+    #frame{
+        width: 70%;
+    }
+    #frame h2 {
+        top: 19%;
+        left: -11%;
+        font-size: 25.5vw;
+    }
+
+    #frame img {
+        left: -50%;
+        width: 500px;
+        top: 15%;
+    }
+
+    .big-text{
+        bottom: 2%;
+
+    }
+    .big-text h1 {
+        font-size: 20vw;
+        transform: scaleY(2.5);
+        letter-spacing: 5px;
+    }
+}
